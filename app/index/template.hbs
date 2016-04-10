@@ -1,18 +1,1 @@
-{{#shopping-cart as |cart updateProduct removeProduct|}}
-
-  <h1>Your Current Shopping Cart</h1>
-  <hr>
-  <section class="cart-container">
-
-    {{shopping-cart/product-list
-        products=cart.products
-        updateItem=(action 'updateProduct')
-        removeProduct=(action 'removeProduct')
-    }}
-
-    {{shopping-cart/cart-subtotal subtotal=cart.subtotal}}
-    <hr>
-    {{shopping-cart/cart-checkout-button canCheckout=cart.submittable}}
-
-  </section>
-{{/shopping-cart}}
+{{shopping-cart}}
