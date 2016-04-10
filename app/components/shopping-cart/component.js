@@ -1,15 +1,11 @@
 import Ember from 'ember';
 
 const {
-  computed,
+  inject,
 } = Ember;
 
 export default Ember.Component.extend({
-  cartService: Ember.inject.service('cart'),
-  cart: computed('products', 'subtotal', () => {
-    const cart = { products: [], subtotal: 0.0 };
-    return cart;
-  }),
+  cart: inject.service('services/cart'),
 
   actions: {
     updateProduct(product) {

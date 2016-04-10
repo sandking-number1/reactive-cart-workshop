@@ -1,3 +1,8 @@
 {
-  "extends": "airbnb/base"
+  "extends": "airbnb/base",
+  "rules": {
+      "arrow-body-style": [0, "as-needed"],
+      "comma-dangle": 0,
+      "no-console": 0
+    }
 }
