@@ -1,1 +1,11 @@
-{{yield}}
+<section class="cart-items-list">
+
+{{#if products}}
+  {{#each products as |product|}}
+    {{shopping-cart/product-list/list-item product=product }}
+  {{/each}}
+{{else}}
+  You have no items in your cart.
+{{/if}}
+
+</section>

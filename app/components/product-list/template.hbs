@@ -1,1 +1,12 @@
-{{yield}}
+<h1>Product List</h1>
+<section class="products-container">
+  {{#each products as |product|}}
+  <hr>
+    <section class="product">
+      {{product-display product=product}}
+      <section class="add-to-cart">
+        {{add-to-cart-button click=(action 'addToCart' product)}}
+      </section>
+    </section>
+  {{/each}}
+</section>

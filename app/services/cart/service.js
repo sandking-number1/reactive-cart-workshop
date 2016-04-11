@@ -22,6 +22,11 @@ export default Ember.Service.extend({
     return total;
   }),
 
+  addProduct(product) {
+    console.log('adding product to current cart', product);
+    this.get('products').pushObject(product);
+  },
+
   products: [],
 
   init() {

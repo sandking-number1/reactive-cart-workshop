@@ -39,20 +39,28 @@ nav.menu {
 }
 .cart-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   background: #DCFFFC;
-  padding-top: 200px;
+  padding-top: 10px;
   min-height: 500px;
 }
 
-.product-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  .product-list {
-    flex: 0 0 25%;
+.cart-items-list {
+  background: #111;
+  margin: 10px;
+  .cart-list-item {
+    margin: 20px;
+  }
+}
+
+.products-container {
+  background: #dcfffc;
+
+  .product {
     margin: 5px;
     padding: 2px;
+    width: 100%;
+    color: #2A726D;
   }
 }
